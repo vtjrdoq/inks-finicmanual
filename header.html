@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>финиковый справочник</title>
+    <link rel="icon" type="image/svg+xml" sizes="128x128" href="media/img/logo.svg">
+
+    <link href="./styles/clear.css" rel="stylesheet">
+    <link href="./styles/fonts.css" rel="stylesheet">
+    <link href="./styles/general-style.css" rel="stylesheet">
+    <link href="./styles/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="modal">
+        <div class="modal__window">
+            <button class="modal__button button--modal-close">
+				<svg class="button--modal-close" width="14" height="14">
+					<use href="./media/icons/sprite.svg#close-modal"></use>
+				</svg>
+			</button>
+			<nav class="modal__nav">
+				<ul class="modal__list">
+					<li class="modal__item">
+						<a class="modal__link" href="#">Магазин</a>
+						<button class="modal__arrow" href="#">
+							<svg width="12" height="7">
+								<use href="./media/icons/sprite.svg#arrow"></use>
+							</svg>
+						</button>
+					</li>
+					<li class="modal__item">
+						<a class="modal__link" href="#">Скидки</a>
+					</li>
+					<li class="modal__item">
+						<a class="modal__link" href="#">Новые поступления</a>
+					</li>
+					<li class="modal__item">
+						<a class="modal__link" href="#">Бренды</a>
+					</li>
+				</ul>
+			</nav>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__wrapper container">
+            <a href="./index.html" class="logo">
+                <img class="logo-img" src="./media/logo/logo.svg" alt="логотип финиковго справочника: манул и студент пожимают руки">
+            </a>
+            <button class="burger-menu">
+                <svg width="96" height="96">
+					<use href="./media/sprite.svg#burger-menu"></use>
+				</svg>
+            </button>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__link" href="#">Контакты</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">Навигация</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">Тема</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>

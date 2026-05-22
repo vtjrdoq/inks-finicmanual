@@ -1,0 +1,258 @@
+
+
+.hero {
+    margin-top: 100px;
+    position: relative;
+}
+
+.hero__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+    margin-bottom: 30px;
+}
+
+.hero__merging-inscription, .hero__final-inscrption, .hero__title, .hero__erio-name, .hero__finuniversity-name {
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero__finuniversity, .hero__erio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    background: var(--accent-yellow-color);
+    padding: 30px 20px;
+    border-radius: 30px;
+    border: 3px solid var(--accent-brown-color);
+}
+
+@media (width > 1100px) {
+    .hero__finuniversity-logo {
+        height: 148px;
+    }
+
+    .hero__erio-logo {
+        height: 110px;
+        padding-bottom: 30px;
+    }
+}
+
+.hero__finuniversity-name, .hero__erio-name {
+    font-size: 24px;
+}
+
+.hero__decoration {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    background: var(--bg-darker-color);
+    height: 80px;
+}
+
+.hero__merging-inscription {
+    font-size: 32px;
+    align-self: center;
+}
+
+.hero__final-inscrption {
+    grid-column-start: 4 span;
+
+    font-size: 120px;
+    font-weight: 800;
+    color: var(--title-text-color);
+}
+
+.hero__picture {
+    grid-column-start: 5 span;
+    max-width: 1000px;
+
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.image {
+    height: auto;
+
+    transition: transform 0.1s ease-out;
+    will-change: transform;
+}
+
+.image--finic {
+    width: 350px;
+    padding-top: 140px;
+}
+
+.image--students {
+    width: 650px;
+    padding-bottom: 140px;
+}
+
+.hero__title {
+    grid-column-start: 6 span;
+}
+
+
+/* ------------------ */
+.article-block__wrapper {
+    display: flex;
+}
+
+.paragraph {
+    margin-top: 30px;
+}
+
+.paragraph__title {
+    margin-bottom: 8px;
+}
+
+.paragraph__text {
+    text-align: justify;
+}
+
+.nav__decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 100px;
+    background: var(--accent-yellow-color);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.nav__block {
+    position: sticky;
+    top: 60px;
+
+    width: 300px;
+    margin: 60px;
+    margin-right: 0;
+    padding: 30px 30px 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    background: var(--accent-blue-color);
+    border: 3px solid var(--accent-brown-color);
+    border-radius: 30px;
+}
+
+.nav__title {
+    z-index: 2;
+}
+
+.nav__picture {
+    margin-top: 30px;
+    /* width: 100px; */
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+}
+
+.nav__item {
+    background: var(--accent-yellow-color);
+
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: 3px solid var(--accent-brown-color);
+}
+
+/* теперь странички с фактами */
+
+.title-block {
+    margin: 0 auto;
+    padding: 80px 30px 180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facts-block {
+    border-radius: 50px;
+    padding: 80px 0 180px;
+
+    margin-top: -100px;
+}
+
+.facts-block:nth-child(even) {
+    background: var(--bg-darker-color);
+}
+
+.facts-block:nth-child(odd) {
+    background: var(--bg-light-color);
+}
+
+.facts-block:last-child {
+    padding-bottom: 80px;
+}
+
+#fact--legend {
+    background: var(--light-blue-color);
+}
+
+.top-block__text {
+    margin: 20px 0 80px;
+}
+
+.info__item {
+    padding-block: 30px;
+    border-top: 3px solid var(--accent-brown-color);
+}
+
+.info__item:last-child {
+    border-bottom: 3px solid var(--accent-brown-color);
+}
+
+.info__button {
+    height: 80px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info__arrow {
+    height: 60px;
+    transition: 0.5s;
+}
+
+.info__arrow--rotated {
+    transform: rotate(90deg);
+}
+
+.info__fact {
+    background: var(--accent-yellow-color);
+    border: 3px solid var(--accent-brown-color);
+    padding: 30px;
+    border-radius: 30px;
+
+    margin: 15px 0 35px;
+}
+
+.info__paragraph {
+    text-align: justify;
+}
+
+.fact--closed {
+    display: none;
+}

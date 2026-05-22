@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Montserrat";
+    src:
+        local("Montserrat 400"), local("Montserrat-400"), 
+        url("../fonts/Montserrat-Regular.woff2") format('woff2'),
+        url("../fonts/Montserrat-Regular.woff") format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PlaypenSans";
+    src:
+        local("PlaypenSans 300"), local("PlaypenSans-300"), 
+        url("../fonts/PlaypenSans-Light.woff2") format('woff2'),
+        url("../fonts/PlaypenSans-Light.woff") format('woff'),
+        url("../fonts/PlaypenSans-Light.ttf") format('ttf');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PlaypenSans";
+    src:
+        local("PlaypenSans 500"), local("PlaypenSans-500"), 
+        url("../fonts/PlaypenSans-Medium.woff2") format('woff2'),
+        url("../fonts/PlaypenSans-Medium.woff") format('woff'),
+        url("../fonts/PlaypenSans-Medium.ttf") format('ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PlaypenSans";
+    src:
+        local("PlaypenSans 800"), local("PlaypenSans-800"), 
+        url("../fonts/PlaypenSans-ExtraBold.woff2") format('woff2'),
+        url("../fonts/PlaypenSans-ExtraBold.woff") format('woff'),
+        url("../fonts/PlaypenSans-ExtraBold.ttf") format('ttf');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}

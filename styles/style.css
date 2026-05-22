@@ -89,13 +89,15 @@
 }
 
 .image--finic {
-    width: 350px;
-    padding-top: 140px;
+    width: 450px;
+    padding-top: 170px;
+    margin-right: -28px;
 }
 
 .image--students {
-    width: 650px;
-    padding-bottom: 140px;
+    width: 850px;
+    padding-bottom: 170px;
+    margin-left: -28px;
 }
 
 .hero__title {

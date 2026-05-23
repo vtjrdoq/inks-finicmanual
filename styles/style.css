@@ -207,12 +207,16 @@
     padding-bottom: 80px;
 }
 
-#fact--legend {
+#fact--special {
     background: var(--light-blue-color);
 }
 
+.top-block {
+    margin-bottom: 80px;
+}
+
 .top-block__text {
-    margin: 20px 0 80px;
+    margin-top: 20px;
 }
 
 .info__item {
@@ -231,6 +235,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.info__name-of-fact {
+    text-align: left;
 }
 
 .info__arrow {

@@ -43,7 +43,6 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 60px;
     text-transform: uppercase;
 }
 
@@ -66,12 +65,20 @@ h4 {
 }
 
 @media (width > 1100px) {
+    h1 {
+        font-size: 60px;
+    } 
+
     .logo-img {
         height: 108px;
     }
 }
 
 @media (width <= 1100px) {
+    h1 {
+        font-size: 40px;
+    }
+
     .logo-img {
         height: 80px;
     }
@@ -81,7 +88,9 @@ button {
     background: none;
 }
 
+/* --------------------------------- */
 /* модальное окно */
+
 .body--fixed {
     overflow-y: hidden;
 }
@@ -95,6 +104,10 @@ button {
 @media (width <= 700px) {
     .header__nav {
         display: none;
+    }
+
+    .burger-menu svg {
+        height: 64px;
     }
 }
 
@@ -163,7 +176,6 @@ button {
 
 .header {
     background: var(--bg-darkest-color);
-    height: 160px;
 }
 
 .header__wrapper {
@@ -187,3 +199,18 @@ button {
 }
 
 
+@media (width > 700px) {
+    .header {
+        height: 160px;
+    }
+}
+
+@media (width <= 700px) {
+    .header {
+        height: 120px;
+    }
+
+    .logo-img {
+        height: 64px;
+    }
+}

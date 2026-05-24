@@ -15,7 +15,7 @@
         <ellipse cx="60.23" cy="29.75" rx="7.36" ry="6.23" transform="translate(20.08 83.61) rotate(-79.58)" fill="#827751" stroke="#5f361a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
         <ellipse cx="13.8" cy="29.75" rx="6.23" ry="7.36" transform="translate(-5.15 2.99) rotate(-10.42)" fill="#827751" stroke="#5f361a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
     </symbol>
-    <symbol id="burger-menu" width="96" height="96" viewBox="0 0 96 96" fill="none">
+    <symbol id="burger-menu" viewBox="0 0 96 96" fill="none">
 		<defs>
         <style>
             .st0 {

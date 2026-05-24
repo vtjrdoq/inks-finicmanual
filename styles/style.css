@@ -1,16 +1,11 @@
-
-
 .hero {
     margin-top: 100px;
     position: relative;
 }
 
-.hero__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 50px;
-    margin-bottom: 30px;
-}
+
+/* ------------------------------------------ */
+/* верхняя часть грида */
 
 .hero__merging-inscription, .hero__final-inscrption, .hero__title, .hero__erio-name, .hero__finuniversity-name {
     line-height: 1;
@@ -22,58 +17,99 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 25px;
+    justify-content: center;
 
     background: var(--accent-yellow-color);
-    padding: 30px 20px;
     border-radius: 30px;
     border: 3px solid var(--accent-brown-color);
 }
 
-@media (width > 1100px) {
-    .hero__finuniversity-logo {
-        height: 148px;
-    }
-
-    .hero__erio-logo {
-        height: 110px;
-        padding-bottom: 30px;
-    }
-}
-
-.hero__finuniversity-name, .hero__erio-name {
+.hero__finuniversity-name {
     font-size: 24px;
 }
 
 .hero__decoration {
     position: absolute;
-    top: 90px;
     left: 0;
     right: 0;
     z-index: -1;
-
+    
     background: var(--bg-darker-color);
-    height: 80px;
-}
-
-.hero__merging-inscription {
-    font-size: 32px;
-    align-self: center;
 }
 
 .hero__final-inscrption {
-    grid-column-start: 4 span;
-
-    font-size: 120px;
     font-weight: 800;
     color: var(--title-text-color);
 }
 
-.hero__picture {
-    grid-column-start: 5 span;
-    max-width: 1000px;
+@media (width > 1100px) {
+    .hero__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 50px;
+        margin-bottom: 30px;
+    }
 
+    .hero__finuniversity, .hero__erio {
+        gap: 15px;
+        padding: 80px 20px;
+    }
+
+    .hero__erio-logo {
+        height: 90px;
+    }
+
+    .hero__merging-inscription {
+        font-size: 32px;
+        align-self: center;
+    }
+
+    .hero__decoration {
+        top: 86px;
+        height: 80px;
+    }
+
+    .hero__final-inscrption {
+        grid-column-start: 4 span;
+        font-size: 115px;
+    }
+}
+
+@media (width <= 1100px) {
+    .hero__container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 30px;
+    }
+
+    .hero__finuniversity, .hero__erio {
+        gap: 15px;
+        padding: 40px 20px;
+    }
+
+    .hero__erio-logo {
+        height: 80px;
+    }
+
+    .hero__merging-inscription {
+        font-size: 24px;
+    }
+
+    .hero__decoration {
+        top: 180px;
+        height: 60px;
+    }
+
+    .hero__final-inscrption {
+        font-size: 40px;
+    }
+}
+
+/* ------------------------------------------ */
+/* блок картинки */
+
+.hero__picture {
     display: flex;
     gap: 0;
     justify-content: center;
@@ -88,24 +124,47 @@
     will-change: transform;
 }
 
-.image--finic {
-    width: 450px;
-    padding-top: 170px;
-    margin-right: -28px;
+@media (width > 1100px) {
+    .hero__picture {
+        grid-column-start: 5 span;
+    }
+
+    .image--finic {
+        width: 450px;
+        padding-top: 170px;
+        margin-right: -28px;
+    }
+    
+    .image--students {
+        width: 850px;
+        padding-bottom: 170px;
+        margin-left: -28px;
+    }
+
+    .hero__title {
+        grid-column-start: 6 span;
+    }
 }
 
-.image--students {
-    width: 850px;
-    padding-bottom: 170px;
-    margin-left: -28px;
-}
-
-.hero__title {
-    grid-column-start: 6 span;
+@media (width <= 1100px) {
+    .image--finic {
+        width: 300px;
+        padding-top: 85px;
+        margin-right: -18px;
+        padding-left: 80px;
+    }
+    
+    .image--students {
+        width: 450px;
+        padding-bottom: 85px;
+        margin-left: -18px;
+    }
 }
 
 
 /* ------------------ */
+/* секция с текстом */
+
 .article-block__wrapper {
     display: flex;
 }
@@ -122,61 +181,125 @@
     text-align: justify;
 }
 
-.nav__decoration {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
 
-    height: 100px;
-    background: var(--accent-yellow-color);
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-}
-
-.nav__block {
-    position: sticky;
-    top: 60px;
-
-    width: 300px;
-    margin: 60px;
-    margin-right: 0;
-    padding: 30px 30px 40px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-
-    background: var(--accent-blue-color);
-    border: 3px solid var(--accent-brown-color);
-    border-radius: 30px;
-}
-
-.nav__title {
-    z-index: 2;
-}
-
-.nav__picture {
-    margin-top: 30px;
-    /* width: 100px; */
-}
-
-.nav__list {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 20px;
-}
+/* ------------------------- */
+/* навигация */
 
 .nav__item {
     background: var(--accent-yellow-color);
-
-    padding: 8px 20px;
-    border-radius: 50px;
     border: 3px solid var(--accent-brown-color);
+    border-radius: 50px;
 }
 
+@media (width > 700px) {
+    .nav__decoration {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    
+        height: 100px;
+        background: var(--accent-yellow-color);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .nav__container {
+        position: sticky;
+        top: 60px;
+
+    }
+    
+    .nav__block {
+        position: relative;
+
+        width: 300px;
+        margin: 60px;
+        margin-right: 0;
+        padding: 30px 30px 40px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    
+        background: var(--accent-blue-color);
+        border: 3px solid var(--accent-brown-color);
+        border-radius: 30px;
+    }
+    
+    .nav__title {
+        z-index: 2;
+    }
+    
+    .nav__picture {
+        margin-top: 30px;
+    }
+    
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 20px;
+    }
+
+    .nav__item {
+        padding: 8px 20px;
+    }
+}
+
+@media (width <= 700px) {
+    .nav {
+        position: relative;
+        margin-left: 40px;
+    }
+
+    .nav__container {
+        position: sticky;
+        top: 60px;
+    }
+
+    .nav__block {
+        position: absolute;
+        left: 100%;
+        width: 600px;
+    }
+
+    .nav__title {
+        display: none;
+    }
+
+    .nav__picture {
+        transform: rotate(270deg) translate(0, -20px);
+        margin-bottom: 30px;
+        transition: all 0.5s;
+    }
+
+    .nav__picture:hover {
+        transform: rotate(270deg) translate(0, -80px);
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav__item {
+        transition: all 0.5s;
+        padding: 20px 30px;
+        font-size: 22px;
+    }
+
+    .nav__item:hover {
+        transform: translate(-180px, 0);
+    }
+}
+
+
+
+
+/* -------------------------------------------------- */
 /* теперь странички с фактами */
 
 .title-block {

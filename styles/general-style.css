@@ -28,6 +28,10 @@ body {
     color: var(--main-text-color);
 }
 
+.button:focus {
+  outline: none;
+}
+
 /* ------------------------ */
 
 .container {

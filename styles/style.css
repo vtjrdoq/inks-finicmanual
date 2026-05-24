@@ -185,6 +185,9 @@
 /* ------------------------- */
 /* навигация */
 
+.nav {
+    overflow-x: hidden;
+}
 .nav__item {
     background: var(--accent-yellow-color);
     border: 3px solid var(--accent-brown-color);

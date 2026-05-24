@@ -30,7 +30,7 @@ body {
     color: var(--main-text-color);
 }
 
-.button:focus {
+button:focus {
     outline: none;
 }
 

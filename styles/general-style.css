@@ -34,7 +34,7 @@ button:focus {
     outline: none;
 }
 
-.svg, .img {
+svg, img, use {
     filter: none !important;
 }
 

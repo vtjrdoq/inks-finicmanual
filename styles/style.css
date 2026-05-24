@@ -329,7 +329,7 @@
         font-size: 22px;
     }
 
-    .nav__item:hover {
+    .nav__item.is-active {
         transform: translate(-240px, 0);
     }
 }

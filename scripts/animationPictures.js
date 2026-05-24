@@ -9,7 +9,7 @@ window.addEventListener('scroll', () => {
     const containerCenter = rect.top + rect.height / 2;
 
     const distanceFromCenter = containerCenter - viewportCenter;
-    const movement = Math.abs(distanceFromCenter) * 0.4;
+    const movement = Math.abs(distanceFromCenter) * 0.2;
 
     picFinic.style.transform = `translateX(-${movement}px)`;
     picStudents.style.transform = `translateX(${movement}px)`;

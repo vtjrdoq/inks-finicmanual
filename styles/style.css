@@ -109,12 +109,11 @@
 /* ------------------------------------------ */
 /* блок картинки */
 
-.hero__picture {
+.hero__wrapper {
     display: flex;
     gap: 0;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .image {
@@ -147,17 +146,31 @@
 }
 
 @media (width <= 1100px) {
+    .hero__picture {
+        position: relative;
+        height: 500px;
+    }
+
+    .hero__wrapper {
+        position: absolute;
+        left: -30px;
+        right: -30px;
+        top: 0;
+        bottom: 0;
+
+        overflow: hidden;
+    }
     .image--finic {
         width: 300px;
         padding-top: 85px;
-        margin-right: -18px;
+        margin-right: -10px;
         padding-left: 80px;
     }
     
     .image--students {
         width: 450px;
         padding-bottom: 85px;
-        margin-left: -18px;
+        margin-left: -10px;
     }
 }
 
@@ -184,6 +197,7 @@
 
 /* ------------------------- */
 /* навигация */
+
 .nav__item {
     background: var(--accent-yellow-color);
     border: 3px solid var(--accent-brown-color);
@@ -203,10 +217,13 @@
         border-top-right-radius: 30px;
     }
 
-    .nav__container {
+    .nav {
         position: sticky;
         top: 60px;
+    }
 
+    .is-sticky {
+        position: relative;
     }
     
     .nav__block {
@@ -248,14 +265,35 @@
 }
 
 @media (width <= 700px) {
-    .nav {
+    .article-block__wrapper {
+        padding-right: 0;
+    }
+
+    .nav__wrapper {
+        padding-left: 60px;
         position: relative;
-        margin-left: 40px;
+    }
+
+    .nav {
+        position: absolute;
+        left: -300px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        overflow: hidden;
     }
 
     .nav__container {
-        position: sticky;
-        top: 60px;
+        height: 582px;
+    }
+
+    .is-sticky {
+        position: fixed !important;
+        top: 113px;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
     }
 
     .nav__block {
@@ -269,13 +307,13 @@
     }
 
     .nav__picture {
-        transform: rotate(270deg) translate(0, -20px);
+        transform: rotate(270deg) translate(0, -50px);
         margin-bottom: 30px;
         transition: all 0.5s;
     }
 
     .nav__picture:hover {
-        transform: rotate(270deg) translate(0, -80px);
+        transform: rotate(270deg) translate(0, -100px);
     }
 
     .nav__list {
@@ -285,13 +323,14 @@
     }
 
     .nav__item {
+        transform: translate(-30px, 0);
         transition: all 0.5s;
         padding: 20px 30px;
         font-size: 22px;
     }
 
     .nav__item:hover {
-        transform: translate(-180px, 0);
+        transform: translate(-240px, 0);
     }
 }
 
@@ -351,7 +390,6 @@
 }
 
 .info__button {
-    height: 80px;
     width: 100%;
 
     display: flex;
@@ -366,6 +404,7 @@
 .info__arrow {
     height: 60px;
     transition: 0.5s;
+    flex-shrink: 0;
 }
 
 .info__arrow--rotated {

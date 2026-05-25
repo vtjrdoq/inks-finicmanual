@@ -10,44 +10,62 @@
     <link href="./styles/fonts.css" rel="stylesheet">
     <link href="./styles/general-style.css" rel="stylesheet">
     <link href="./styles/style.css" rel="stylesheet">
+
+    <script src="./scripts/promotionClose.js"></script>
 </head>
 <body>
     <div class="modal">
         <div class="modal__window">
             <button class="modal__button button--modal-close">
-				<svg class="button--modal-close" width="14" height="14">
-					<use href="./media/icons/sprite.svg#close-modal"></use>
-				</svg>
-			</button>
-			<nav class="modal__nav">
-				<ul class="modal__list">
-					<li class="modal__item">
-						<a class="modal__link" href="#">Магазин</a>
-						<button class="modal__arrow" href="#">
-							<svg width="12" height="7">
-								<use href="./media/icons/sprite.svg#arrow"></use>
-							</svg>
-						</button>
-					</li>
-					<li class="modal__item">
-						<a class="modal__link" href="#">Скидки</a>
-					</li>
-					<li class="modal__item">
-						<a class="modal__link" href="#">Новые поступления</a>
-					</li>
-					<li class="modal__item">
-						<a class="modal__link" href="#">Бренды</a>
-					</li>
-				</ul>
-			</nav>
+                <svg class="button--modal-close" width="14" height="14">
+                    <use href="./media/icons/sprite.svg#close-modal"></use>
+                </svg>
+            </button>
+            <nav class="modal__nav">
+                <ul class="modal__list">
+                    <li class="modal__item">
+                        <a class="modal__link" href="#">Магазин</a>
+                        <button class="modal__arrow" href="#">
+                            <svg width="12" height="7">
+                                <use href="./media/icons/sprite.svg#arrow"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="modal__item">
+                        <a class="modal__link" href="#">Скидки</a>
+                    </li>
+                    <li class="modal__item">
+                        <a class="modal__link" href="#">Новые поступления</a>
+                    </li>
+                    <li class="modal__item">
+                        <a class="modal__link" href="#">Бренды</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
+    <!-- <div class="promotion">
+        <div class="container">
+            <div class="promotion__inner">
+                <div class="promotion__text">
+                    <p class="computer-version">Хотите заказать сайт или презентацию в уникальном дизайне? </p> 
+                    <a class="promotion__link computer-version" href="https://t.me/varvarya_rabacc">Обращайтесь в тг</a>
+                    <a class="promotion__link mobile-version" href="https://t.me/varvarya_rabacc">Заказать сайт в уникальном дизайне</a>
+                </div>
+                <button class="button--close">
+                    <svg width="14" height="14">
+                        <use href="./media/sprite.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div> -->
     <header class="header">
         <div class="header__wrapper container">
             <a href="./index.html" class="logo">
                 <img class="logo-img" src="./media/logo/logo.svg" alt="логотип финиковго справочника: манул и студент пожимают руки">
             </a>
-            <button class="burger-menu">
+            <!-- <button class="burger-menu">
                 <svg width="96" height="96">
 					<use href="./media/sprite.svg#burger-menu"></use>
 				</svg>
@@ -64,7 +82,28 @@
                         <a class="header__link" href="#">Тема</a>
                     </li>
                 </ul>
+            </nav> -->
+
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__link" href="./page-history.html">История вуза</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="./page-dean.html">Деканат</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="./page-advices.html">Где поесть</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="./page-clubs.html">Клубы</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="./page-eco.html">Места и экология</a>
+                    </li>
+                </ul>
             </nav>
+            <a class="header__navigation" href="#navigation">Навигация</a>
         </div>
     </header>
 </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light only">
+    <meta name="color-scheme" content="only light">
     <title>финиковый справочник</title>
     <link rel="shortcut icon" href="./media/logo/icon-finic.ico" type="image/x-icon">
 
@@ -28,8 +28,25 @@
 
     <script src="./scripts/main.js"></script>
     <script src="./scripts/animationPictures.js"></script>
+    <script src="./scripts/promotionClose.js"></script>
 </head>
 <body>
+    <div class="promotion">
+        <div class="container">
+            <div class="promotion__inner">
+                <div class="promotion__text">
+                    <p class="computer-version">Хотите заказать сайт или презентацию в уникальном дизайне? </p> 
+                    <a class="promotion__link computer-version" href="https://t.me/varvarya_rabacc">Обращайтесь в тг</a>
+                    <a class="promotion__link mobile-version" href="https://t.me/varvarya_rabacc">Заказать сайт в уникальном дизайне</a>
+                </div>
+                <button class="button--close">
+                    <svg width="14" height="14">
+                        <use href="./media/sprite.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
     <div id="header-placeholder"></div>
     <main class="main">
         <div class="hero">
@@ -126,7 +143,7 @@
                     </section>
                 </div>
                 <div class="nav__wrapper">
-                    <nav class="nav">
+                    <nav class="nav" id="navigation">
                         <div class="nav__container">
                             <div class="nav__block">
                                 <div class="nav__decoration"></div>

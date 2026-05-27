@@ -311,3 +311,52 @@ button {
         height: 64px;
     }
 }
+
+
+/* ---------------------- */
+
+.footer {
+    background: var(--bg-darkest-color);
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+.footer-contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.footer-contacts__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.footer-contacts__nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer-contacts__link {
+    color: var(--bg-darker-color);
+    font-size: 14px;
+}
+
+@media (width <= 700px) {
+    .footer-contacts {
+        padding-right: 40px;
+    }
+}
+
+@media (width <= 550px) {
+    .footer-contacts__wrapper {
+        flex-direction: column;
+        gap: 0;
+        align-items: start;
+    }
+}
+
+
